@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var obj = new XMLHttpRequest();
+        obj.open("GET","Exemple.txt",true);
+        obj.onreadystatechange = function (){
+            if (obj.status == 200 && obj.readyState == 4){
+                document.body.innerHTML=this.responseText
+            }
+        }
+        obj.send();
+        </script>
+
+
+</body>
+</html>

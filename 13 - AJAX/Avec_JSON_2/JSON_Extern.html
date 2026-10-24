@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var obj = new XMLHttpRequest();
+        obj.open("GET", "Exemple.json", true);
+        obj.send();
+        obj.onreadystatechange = function () {
+            if (obj.readyState == 4 && obj.status == 200) {
+                var objets = JSON.parse(obj.responseText);
+                for (let i = 0; i < objets.length; i++) {
+                    document.getElementById("slct").innerHTML += "<option>" + objets[i].ref + "</option>";
+                    // ou
+                    // let option = document.createElement("option");
+                    // option.textContent = objets[i].nom;
+                    // document.getElementById("XX").appendChild(option);
+                }
+            }
+        }
+
+        function AfficheNom() {
+            let ref = document.getElementById('slct').value;
+            var obj = new XMLHttpRequest();
+            obj.open("GET", "Exemple.json", true);
+            obj.send();
+            obj.onreadystatechange = function () {
+                if (obj.readyState == 4 && obj.status == 200) {
+                    var objets = JSON.parse(obj.responseText);
+                    for (let i = 0; i < objets.length; i++) {
+                        if (objets[i].ref == ref) {
+                            document.getElementById('nom').value = objets[i].nom;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    </script>
+
+    Reference :
+    <select id="slct" onchange="AfficheNom()">
+        <option value=""></option>
+    </select>
+    Nom : <input type="text" name="" id="nom">
+
+</body>
+
+</html>

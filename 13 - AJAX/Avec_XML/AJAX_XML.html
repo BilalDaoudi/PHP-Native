@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "Exemple_XML.xml", true);
+        xhttp.send();
+        xhttp.onreadystatechange = function () {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                let Reponse = xhttp.responseXML;
+                let ListPenom = Reponse.getElementsByTagName("prenom");
+                let txt = "";
+                for (let i = 0; i < ListPenom.length; i++) {
+                    //txt = txt + x[i].innerHTML + "<br>";
+                    // ou 
+                    txt = txt + ListPenom[i].textContent + "<br>";
+                }
+                document.getElementById("personne").innerHTML = txt;
+            }
+        }
+    </script>
+    <h2>Les Prenom des personnes</h2>
+    <p id="personne"></p>
+</body>
+</html>

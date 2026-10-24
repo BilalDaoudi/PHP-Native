@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX</title>
+  <script>
+    function Remplir_Select() {
+      var obj = new XMLHttpRequest();
+      obj.open("GET", "Exemple_JSON.json", true);
+      obj.send();
+      obj.onreadystatechange = function () {
+        if (obj.readyState == 4 && obj.status == 200) {
+          var objets = JSON.parse(obj.responseText);
+          for (let i = 0; i < objets.length; i++) {
+            document.getElementById("XX").innerHTML += "<option>" + objets[i].nom + "</option>";
+            // ou
+            // let option = document.createElement("option");
+            // option.textContent = objets[i].nom;
+            // document.getElementById("XX").appendChild(option);
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body onload="Remplir_Select()">
+
+  <pre>
+  les Nom :  <select id="XX"></select>
+</pre>
+
+</body>
+
+</html>

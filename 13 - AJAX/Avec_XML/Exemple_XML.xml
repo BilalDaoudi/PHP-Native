@@ -1,0 +1,22 @@
+<personnes>
+    <pers>
+        <nom>DAOUDI</nom>
+        <prenom>Bilal</prenom>
+        <age>19</age>
+    </pers>
+    <pers>
+        <nom>GHANAM</nom>
+        <prenom>Khalil</prenom>
+        <age>18</age>
+    </pers>
+    <pers>
+        <nom>Salhi</nom>
+        <prenom>Fatima</prenom>
+        <age>18</age>
+    </pers>
+    <pers>
+        <nom>Tahirri</nom>
+        <prenom>mohamed</prenom>
+        <age>17</age>
+    </pers>
+</personnes>

@@ -1,0 +1,6 @@
+[
+    { "nom": "Daoudi", "prenom": "Bilal", "age": 19, "image": "Foto/img1.jpg" },
+    { "nom": "Ghanam", "prenom": "Khalil", "age": 19, "image": "Foto/img2.jpg" },
+    { "nom": "Salhi", "prenom": "Fatima", "age": 18, "image": "Foto/img3.jpg" },
+    { "nom": "Tahirri", "prenom": "Mohamed", "age": 17, "image": "Foto/img4.jpg" }
+]
