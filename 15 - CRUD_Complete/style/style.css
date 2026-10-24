@@ -1,0 +1,58 @@
+.sort-icon {
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+.type span {
+    margin: 0 10px;
+}
+
+.type input[type="radio"] {
+    display: none;
+}
+
+.type label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+
+input[type="checkbox"] {
+    border: 1px solid black;
+    margin-right: 5px;
+
+}
+
+.type input[type="radio"]:checked+label {
+    background-color: gray;
+    color: #fcfcfc;
+    box-shadow: 1px 1px 5px gray;
+}
+
+
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-check {
+    margin-right: 20px; /* Espace entre les éléments */
+}
+
+.form-check-input {
+    margin-right: 5px; /* Espace entre l'input et le texte */
+    /* Ajoutez d'autres styles nécessaires */
+}
+
+.form-check-label {
+    display: inline-block; /* Pour aligner correctement le texte avec l'input */
+    cursor: pointer; /* Pour indiquer que le texte est cliquable */
+    /* Ajoutez d'autres styles nécessaires */
+}
