@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+.Recherche{
+    width: 700px;
+    height: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.Trier{
+    width: 700px;
+    height: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.Liste{
+    width: 800px;
+    text-align: center;
+}
+.Filiere{
+    width: 500px;
+    text-align: center;
+    position: fixed;
+    left: 850px;
+    bottom: 400px;
+}
+
+input[type='text']{
+   width: 300px;
+
+}
+input{
+    text-align: center;
+}
+table td{
+    text-align: center;
+}
+#tb tr:hover{
+    background-color: black ;
+    color: rgb(8, 240, 58);
+}
