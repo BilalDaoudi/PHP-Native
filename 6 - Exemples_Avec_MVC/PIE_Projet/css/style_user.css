@@ -1,0 +1,211 @@
+n1
+*{
+    margin: 0;
+}
+body {
+    background-color: rgb(211, 185, 185);
+}
+td {
+    text-align: center;
+}
+th {
+    text-align: center;
+}
+.inp {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+    width: 200px;
+    height: 10px;
+}
+.inp:hover {
+    color: gold;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid rgb(140, 255, 0);
+    width: 200px;
+    height: 10px;
+}
+
+input[type="submit"] {
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: black;
+    width: 150px;
+    height: 30px;
+}
+.Info{
+    position: fixed;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(136, 134, 138);
+    width: 380px;
+    height: 605px;
+    box-shadow: 10px 10px 5px black;
+}
+
+#btn0{
+    position:absolute;
+    left: 110px;
+    width: 200px;
+    height: 30px;
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: black;
+}
+#btn1{
+    position:absolute;
+    left: 110px;
+    top: 600px;
+    width: 200px;
+    height: 30px;
+}
+#btn2{
+    position:absolute;
+    left: 110px;
+    top:550px ;
+    width: 200px;
+    height: 30px;
+}
+.panier{
+    background-color: rgb(181, 181, 154);
+    position: relative;
+    left: 480px;
+    margin: 20px;
+    width: 830px;
+}
+
+
+
+#add {
+    color: aliceblue;
+    height: 30px;
+    background-color: brown;
+}
+
+button {
+    color: aliceblue;
+    height: 30px;
+    background-color: brown;
+}
+
+#Total {
+    width: 100%;
+}
+
+#quantite {
+    width: 140px;
+    height: 20px;
+}
+
+#console {
+    width: 140px;
+    height: 25px;
+}
+
+#quantite {
+    color: rgb(32, 93, 15);
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+#console {
+    color: rgb(32, 93, 15);
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px red;
+}
+
+
+img {
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.t_article{
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.news {
+    position: relative;
+    left: 500px;
+    margin: 20px;
+    width: 830px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    margin: 10px;
+    
+}
+
+.n1 p {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+
+.n1 {
+    width: 30%;
+    box-shadow: 5px 5px 5px black;
+    box-sizing: border-box;
+    margin: 5px;
+    transition: 1s ease;
+    border-radius: 30px;
+    
+}   
+
+.n1:hover {
+    box-shadow: 10px 10px 5px rgb(30, 246, 2);
+    display: block;
+    font-size: 17px;
+    font-weight: 300;
+    transform: scale(0, 6.0, 6, 0, 6.0, 7);
+    border: solid gray 2px;
+}
+
+img {
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.b{
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(181, 181, 154);
+    border: none;
+}
