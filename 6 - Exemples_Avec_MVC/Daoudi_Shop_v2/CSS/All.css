@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+}
+
+img {
+    border-radius: 55%;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+th {
+    font-size: 20px;
+    color: rgb(88, 80, 24);
+    text-align: center;
+}   
+
+td {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body,table{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: linear-gradient(40deg, #E984A2, pink,#E984A2,pink);
+    background-size: 400% 400%;
+    animation: bgBady 15s infinite;
+}
+@keyframes bgBady {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+li {
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    padding: 0px 100px;
+}
+
+
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}    
+.ImgArt{
+    width: 100px;
+}
+.T_info{
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px gray;
+}
+/* #logoFacture{
+    align-items: center;
+}*/
+#imgfacture{
+    margin-top: 50px;
+    width: 250px;
+} 
+.col-6{
+    margin-top: 25px;
+    border-radius: 30px;
+}
+.row{
+    padding-left: 30px;
+    width: 99%;
+}
+
+@media only screen and (max-width : 600px){
+    .row{
+        padding-left: 120px;
+        display: block;
+    }
+    .col-6 table tr{
+        border-bottom: 1px solid black;
+    }
+    .col-6 table{
+        border-radius: 0%;
+    }
+    .col-6 table tr{
+        border-bottom: 1px solid black;
+    }
+    .col-6 h1{
+        width: 350px;
+       font-size: 22px;
+       text-align: left;
+    }
+}
+
+
+
+

@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.login img {
+    border-radius: 50%;
+    
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Pacifico',cursive;
+}
+.inp{
+    font-weight: 600;
+    text-align: center;
+    height: 50px;
+    width:70%;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    box-shadow: -1px 1px 30px -11px rgb(0, 0, 0,0.75);
+    -webkit-box-shadow: -1px 1px 30px -11px rgb(0, 0, 0,0.75);
+    -moz-box-shadow: -1px 1px 30px -11px rgb(0, 0, 0,0.75);
+}
+
+.inp:hover{
+    border: 2px solid black;
+}
+.inp:focus{
+    border: 2px solid blue;
+}
+.inp::placeholder{
+    text-align: center;
+    font-weight: 500;
+}
+.btn1{
+    height: 50px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    font-family: 700;
+    background-color: red;
+}
+body,section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: linear-gradient(100deg, #fff, #008AD7, #fff, #008AD7);
+    background-size: 400% 400%;
+}

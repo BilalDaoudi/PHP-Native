@@ -1,0 +1,85 @@
+.inp,
+select {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    height: 30px;
+    width: 45%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: -1px 1px 30px -11px rgb(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 1px 30px -11px rgb(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 30px -11px rgb(0, 0, 0, 0.75);
+}
+
+.inp:hover {
+    border: 2px solid black;
+}
+
+.inp:focus {
+    border: 2px solid blue;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 500;
+    height: 45px;
+    width: 45%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.btn:hover {
+    font-size: 21px;
+    font-weight: 700;
+    height: 47px;
+    width: 46%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.logo-add-update {
+    margin-top: 30px;
+}
+
+.add_cat {
+    padding-top: 80px;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+@media only screen and (max-width : 600px) {
+    .row {
+        display: block;
+    }
+
+
+    .inp,
+    select {
+        height: 30px;
+        width: 300px;
+    }
+
+    .btn {
+        height: 45px;
+        width: 150px;
+    }
+
+    .btn:hover {
+        height: 47px;
+        width: 150px;
+    }
+
+    .logo-add-update {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
